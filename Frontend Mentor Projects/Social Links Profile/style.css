@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-card {
+    height: max-content;
+    width: 20em;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.8em;
+}
+
+.profile-card > img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.intro h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: greenyellow;
+}
+
+.profile-card .bio {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 80%;
+}
+
+.social-links .btn {
+    color: white;
+    background-color: rgb(56, 56, 56);
+    font-weight: 600;
+    border-radius: 0.6em;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    font-size: 0.8rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.social-links .btn:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.social-links .btn:active {
+    background-color: rgb(145, 216, 39);
+    transform: scale(0.97);
+}

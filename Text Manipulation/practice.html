@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <title>PP</title>
+</head>
+<body>
+    <div id="main-screen">
+        <button id="reset-all-btn">Reset All</button>
+        <input type="text" placeholder="Enter your text" id="text-screen" required>
+    </div>
+    <div class="operations">
+        <fieldset>
+            <legend> Font Size </legend>
+            <button id="fntsize-down">&#x2193;</button>
+            <input type="text" placeholder="(in px)" value="16" id="fntsize-input">
+            <button id="fntsize-up">&#8593;</button>
+            <input type="range" value="16" min="1" max="100" id="fntsize-slider">
+        </fieldset>
+    </div>
+    <div class="operations">
+        <fieldset>
+            <legend> Font Weight </legend>
+            <button id="fntwgt-down">&#x2193;</button>
+            <input type="text" placeholder="(wgt)" value="500" id="fntwgt-input">
+            <button id="fntwgt-up">&#8593;</button>
+            <input type="range" value="16" min="400" max="800" id="fntwgt-slider">
+        </fieldset>
+    </div>
+    <div class="operations">
+        <fieldset>
+            <legend> Font Color </legend>
+            <input type="color" value="#ffffff" name="colorPicker" id="fnt-clr-picker">
+            <input type="text" placeholder="(in RGB)" value="RGB(0, 0, 0)" id="fnt-rgb-input">
+            <input type="text" placeholder="(in HEX)" value="#000000" id="fnt-hex-input">
+        </fieldset>
+    </div>
+    <div class="operations">
+        <fieldset>
+            <legend> Background Color </legend>
+            <input type="color" name="colorPicker" value="#ffffff" id="bg-clr-picker">
+            <input type="text" placeholder="(in RGB)" value="RGB(255, 255, 255)" id="bg-rgb-input">
+            <input type="text" placeholder="(in HEX)" value="#ffffff" id="bg-hex-input">
+        </fieldset>
+    </div>
+    <div id="toggle-container">
+        <button id="toggle-btn"></button>
+    </div>
+
+    <script src="practice.js"></script>
+</body>
+</html>

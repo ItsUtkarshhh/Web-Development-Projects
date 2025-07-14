@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <div class="cal-container">
+        <div class="result-display-box">
+            <div class="visibility-modes">
+                <div class="toggleBox">
+                    <div class="toggle-btn"></div>
+                </div>
+            </div>
+            <div class="result-box">
+                <span id="result">0</span>
+            </div>
+
+        </div>
+        <div class="operation-box">
+            <div class="operators">
+                <button id="del-btn" class="special-btn">DEL</button>
+                <button class="operations" data-value="%">%</button>
+                <button class="operations" data-value="/">/</button>
+                <button class="operations" data-value="*">*</button>
+                <button class="num-btns" data-value="7">7</button>
+                <button class="num-btns" data-value="8">8</button>
+                <button class="num-btns" data-value="9">9</button>
+                <button class="operations" data-value="-">-</button>
+                <button class="num-btns" data-value="4">4</button>
+                <button class="num-btns" data-value="5">5</button>
+                <button class="num-btns" data-value="6">6</button>
+                <button class="operations" data-value="+">+</button>
+                <button class="num-btns" data-value="1">1</button>
+                <button class="num-btns" data-value="2">2</button>
+                <button class="num-btns" data-value="3">3</button>
+                <button id="equal-btn" data-value="=">=</button>
+                <button id="ac-btn" class="special-btn">AC</button>
+                <button class="num-btns" data-value="0">0</button>
+                <button class="num-btns" data-value=".">.</button>
+            </div>
+            <div class="iphone-downbar"></div>
+        </div>
+    </div>
+
+    <script src="cal.js"></script>
+</body>
+</html>

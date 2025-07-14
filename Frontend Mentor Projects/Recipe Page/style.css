@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header > img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.intro, .preptime, .ingredients, .instructions, .nutrition {
+    max-width: 750px;
+    width: 90%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.preptime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.preptime > h2 {
+    color: rgb(95, 0, 110);
+    padding-bottom: 10px;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ingredients > h2, .instructions > h2, .nutrition > h2 {
+    color: rgb(157, 45, 0);
+    padding-bottom: 10px;
+}
+
+.ingredients > ul, .instructions > ol, .preptime > ul {
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nutrition > p {
+    padding-bottom: 10px;
+}
+
+.nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.nutrition thead {
+    background-color: #f5f5f5;
+}
+
+.nutrition th {
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+.nutrition td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
